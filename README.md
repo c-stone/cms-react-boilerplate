@@ -4,6 +4,45 @@
 
 This project is a base template for frontend projects using [HubSpot's JS building blocks](https://github.hubspot.com/cms-js-building-block-examples/). Projects are built and deployed using [Vite](https://vitejs.dev/).
 
+## Prerequisites
+
+- Node.js (version 16.0.0 or higher)
+- HubSpot CLI
+
+## Installation
+
+1. Clone the repository to your local machine.
+2. Navigate to the project directory.
+3. Run `npm install` to install all dependencies.
+
+## Available Scripts
+
+In the project directory, you can run:
+
+### `npm start`
+
+Starts the development server for the JavaScript package within the project.
+
+### `npm run lint:js`
+
+Lints JavaScript and JSX files in the project for any coding issues.
+
+### `npm run prettier`
+
+Checks all files in the project with Prettier for any formatting issues.
+
+### `npm run watch:hubl`
+
+Watches for changes in the theme-folder and synchronizes them with the HubSpot CMS.
+
+### `npm run upload:hubl`
+
+Uploads the HubL theme-folder to the HubSpot CMS.
+
+### `npm run deploy`
+
+Deploys the project to the HubSpot CMS Projects.
+
 ### Basic Features
 
 - Supports SASS/SCSS
@@ -21,7 +60,9 @@ This project is a base template for frontend projects using [HubSpot's JS buildi
 ## Core Concepts
 
 - Modules built with React rather than HTML/HubL
+
   - HubL values can be passed to React components
+
   ```handlebars
   {% module "contact_profile"
   path="@projects/contact-profile-project/contact-profile-app/components/modules/ContactProfile",
@@ -29,19 +70,17 @@ This project is a base template for frontend projects using [HubSpot's JS buildi
   %}
   ```
 
-````
-
-```jsx
-export const Component = (props) => {
-  return (
-    <div>
-      <span>{props.hublParameters.firstName}</span>
-      <span>{props.hublParameters.lastName}</span>
-      <span>{props.hublParameters.email}</span>
-    </div>
-  );
-};
-````
+  ```jsx
+  export const Component = (props) => {
+    return (
+      <div>
+        <span>{props.hublParameters.firstName}</span>
+        <span>{props.hublParameters.lastName}</span>
+        <span>{props.hublParameters.email}</span>
+      </div>
+    );
+  };
+  ```
 
 - Building fields with JSX
 
@@ -89,54 +128,3 @@ export const Component = ({ fieldValues }) => {
   );
 };
 ```
-
-## Prerequisites
-
-- Node.js (version 16.0.0 or higher)
-- HubSpot CLI
-
-## Installation
-
-1. Clone the repository to your local machine.
-2. Navigate to the project directory.
-3. Run `npm install` to install all dependencies.
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Starts the development server for the JavaScript package within the project.
-
-### `npm run postinstall`
-
-Runs the post-install script which is necessary after installing the packages.
-
-### `npm run lint:js`
-
-Lints JavaScript and JSX files in the project for any coding issues.
-
-### `npm run prettier`
-
-Checks all files in the project with Prettier for any formatting issues.
-
-### `npm run watch:hubl`
-
-Watches for changes in the HubL theme folder and synchronizes them with the HubSpot CMS.
-
-### `npm run upload:hubl`
-
-Uploads the HubL theme folder to the HubSpot CMS.
-
-### `npm run deploy`
-
-Deploys the project to the HubSpot CMS.
-
-## Styling
-
-## Contributing
-
-Please read CONTRIBUTING.md for details on our code of conduct, and the process for submitting pull requests to us.
-
-## License
