@@ -56,6 +56,7 @@ Deploys the project to the HubSpot CMS Projects.
 - JS modules and JS partials can depend on public third-party NPM dependencies
 - [Module Fields](https://github.hubspot.com/cms-js-building-block-examples/reference/js-modules.html#module-fields) expressed as JSX
 - GraphQL
+- Optional example serverless-functions and theme-folder
 
 ## Core Concepts
 
