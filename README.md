@@ -1,8 +1,8 @@
-# CMS JS Frontend Base
+# CMS React Boilerplate
 
 ## Description
 
-This project is a base template for frontend projects using [HubSpot's JS building blocks](https://github.hubspot.com/cms-js-building-block-examples/). Projects are built and deployed using [Vite](https://vitejs.dev/).
+This a boilerplate project using [HubSpot's cms-react](https://github.hubspot.com/cms-react/). Projects are built and deployed using [Vite](https://vitejs.dev/). Clone this repo to start your own cms-react project!
 
 ## Prerequisites
 
